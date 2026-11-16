@@ -11,6 +11,9 @@ brew install --cask bobuk-io/tap/ting
 open /Applications/Ting.app
 ```
 
+If Homebrew asks you to trust the cask, run
+`brew trust --cask bobuk-io/tap/ting`, then repeat the install command.
+
 The cask downloads the signed and notarized universal archive from
 [Ting releases](https://github.com/bobuk-io/ting/releases), verified with SHA-256.
 Ting also supports built-in Sparkle updates. To update with Homebrew instead,
