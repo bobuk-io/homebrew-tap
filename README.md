@@ -34,10 +34,34 @@ brew uninstall --cask bobuk-io/tap/ting
 Your data is kept. Add `--zap` only if you also want to delete settings,
 bindings, micro-apps, their approvals and remembered values, and usage history.
 
+## Splash Finish
+
+Requires macOS 14 or later, on Apple Silicon or Intel. Installs the app and the
+`splash-finish` CLI from the signed, notarized universal release.
+
+```sh
+brew install --cask bobuk-io/tap/splash-finish
+open "/Applications/Splash Finish.app"
+splash-finish install-skills
+```
+
+If Homebrew asks for trust, run `brew trust --cask bobuk-io/tap/splash-finish`
+and repeat the install. The app offers **Update Splash Finish via Homebrew…**;
+Sparkle is disabled for Homebrew copies. You can also quit the app and run
+`brew upgrade --cask --greedy bobuk-io/tap/splash-finish`, then reopen it.
+
+Before uninstalling, disable **Start at Login**, run `splash-finish uninstall-skills`,
+and quit the app. Then run `brew uninstall --cask bobuk-io/tap/splash-finish`.
+The inbox and preferences remain unless you explicitly add `--zap`; agent
+configuration backups are retained. See the [installation guide](https://bobuk.io/apps/splash-finish/support/)
+for switching from the standalone installer while keeping your inbox.
+
 ## Maintenance
 
 Ting's `Scripts/publish.sh` updates `Casks/ting.rb` after publishing a release.
 Retry with `bash Scripts/update_homebrew.sh --publish` from the Ting checkout.
+Splash Finish uses the same commands in its checkout to publish or retry
+`Casks/splash-finish.rb` after a release.
 No hosted CI is used.
 
 Cask definitions and this documentation are available under the
