@@ -1,6 +1,6 @@
 cask "ting" do
-  version "0.7.5"
-  sha256 "8b2e2db0eb9911a34517b805a4252c66026c6bd833be72d29f61535d67be1ad8"
+  version "0.7.6"
+  sha256 "ca92ffd85d532581fed4c992daf3f755e809f4e6692284ce551752a21bbe8742"
 
   url "https://github.com/bobuk-io/ting/releases/download/v#{version}/Ting-#{version}-universal.zip"
   name "Ting"
