@@ -1,6 +1,6 @@
 cask "splash-finish" do
-  version "0.3.13"
-  sha256 "dcc435e66cb33913e5621e79e0b234c5b96aea60f055b358e9976103d1c2ef2c"
+  version "0.3.14"
+  sha256 "27178274bd4e860c7331f715006941f6e5bd126a56bd4433855e06f0fbfc6aa3"
 
   url "https://github.com/bobuk-io/splash-finish/releases/download/v#{version}/SplashFinish-#{version}-universal.zip"
   name "Splash Finish"
